@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TiketPesawat.id</title>
+  <link rel="stylesheet" href="style2.css"/>
+</head>
+<body>
+  <header>
+    <h1>TiketPesawat.id</h1>
+    <nav>
+      <a href="#">Cari Penerbangan</a>
+      <a href="#">Hasil</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Cari Tiket Pesawat</h2>
+      <form>
+        <label>Kota Asal:<br>
+          <input type="text" placeholder="Contoh: Jakarta" />
+        </label><br>
+        <label>Kota Tujuan:<br>
+          <input type="text" placeholder="Contoh: Surabaya" />
+        </label><br>
+        <label>Tanggal Keberangkatan:<br>
+          <input type="date" />
+        </label><br>
+       <label>Jumlah Penumpang:<br>
+  <input type="number" name="penumpang" min="1" />
+</label>
+<br>
+<!-- Pastikan form dibuka sebelumnya -->
+<form onsubmit="startBooking(); return false;">
+  <button type="submit">Cari Tiket</button>
+</form>
+
+</section>
+</div>
+    <section class="hasil">
+      <h2>Hasil Penerbangan</h2>
+
+      <div class="card">
+        <h3>Garuda Indonesia</h3>
+        <p>Jakarta ➜ Surabaya<br>
+        Keberangkatan: 08:00 • Tiba: 09:30<br>
+        Harga: Rp850.000</p>
+        <button class="beli">Beli Tiket</button>
+      </div>
+
+      <div class="card">
+        <h3>AirAsia</h3>
+        <p>Jakarta ➜ Surabaya<br>
+        Keberangkatan: 13:00 • Tiba: 14:45<br>
+        Harga: Rp750.000</p>
+        <button class="beli">Beli Tiket</button>
+      </div>
+
+      <div class="card">
+        <h3>AP Airlines</h3>
+        <p>Jakarta ➜ Surabaya<br>
+        Keberangkatan: 16:00 • Tiba: 17:45<br>
+        Harga: Rp700.000</p>
+        <button class="beli">Beli Tiket</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <h2>Kontak Kami</h2>
+    <p>Email: <a href="mailto:garudaindonesia39@gmail.com">garudaindonesia39@gmail.com</a><br>
+    Telp: 0821-6045-7028</p>
+    <p>&copy; 2025 TiketPesawat.id. All rights reserved.</p>
+  </footer>
+</body>
+</html>
